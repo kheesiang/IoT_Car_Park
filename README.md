@@ -8,7 +8,7 @@
 
 ## Description
 
-This project was done for FIT3162 Computer Science Project, S2 2020
+This project was done for FIT3162 Computer Science Project, Sem 2, 2020.
 
 The system can be split into 3 main components, which are: 
  - web dashboard/android app (Flutter)
