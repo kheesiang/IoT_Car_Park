@@ -1,16 +1,16 @@
-# myapp
+# IoT Based Car Parking System
 
-A new Flutter project.
+## Authors
 
-## Getting Started
+- Bee Khee Siang
+- Aqeel Ahlam Rauf
+- Thang Wan Ru
 
-This project is a starting point for a Flutter application.
+## Description
 
-A few resources to get you started if this is your first Flutter project:
+The system can be split into 3 main components, which are: 
+ - web dashboard/android app (Flutter)
+ - cloud database (Google Firestore)
+ - physical prototype (Raspberry Pi & Arduino) 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3 Arduinos are used to control 4 parking slots each. Each parking slot has a HC-SR04 ultrasonic sensor and RGB LED light, which detects and displays changes in the status of the parking slot. The code for each Arduino is written in C and uploaded to it using a Raspberry Pi. Updates are sent to Firestore using a python script on the Raspberry Pi. These changes will then be reflected on the web dashboard/android app in real-time. Flutter and Firestore were chosen as they integrate well with each other, after all, they were both created by Google. 
